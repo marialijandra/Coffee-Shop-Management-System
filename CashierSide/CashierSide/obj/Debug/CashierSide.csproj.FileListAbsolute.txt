@@ -1,0 +1,2 @@
+E:\Downloads\C# .Net\AzureCoffeeShop\CashierSide\CashierSide\obj\Debug\CashierSide.csproj.AssemblyReference.cache
+E:\Downloads\C# .Net\AzureCoffeeShop\CashierSide\CashierSide\obj\Debug\CashierSide.csproj.CoreCompileInputs.cache

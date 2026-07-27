@@ -1,0 +1,120 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Azure Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/site.css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body runat="server" id="pageBody">
+    <form id="mainForm" runat="server">
+
+        <header class="site-header" id="siteHeader">
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="Default.aspx" runat="server" id="navSignature">Signature</a></li>
+                    <li><a href="Coffee.aspx" runat="server" id="navCoffee">Coffee</a></li>
+                    <li><a href="Tea.aspx" runat="server" id="navTea">Tea</a></li>
+                    <li><span class="nav-static">Food</span></li>
+                </ul>
+
+                <a href="Default.aspx" class="logo">Azure</a>
+
+                <div class="nav-actions">
+                    <asp:LinkButton ID="btnOpenCart" runat="server" CssClass="cart-btn"
+                        OnClientClick="toggleCartDrawer(true); return false;">
+                        Cart
+                        <span class="cart-count"><asp:Literal ID="litCartCount" runat="server" /></span>
+                    </asp:LinkButton>
+                </div>
+            </div>
+        </header>
+
+        <asp:Panel ID="pnlToast" runat="server" CssClass="cart-toast" Visible="false">
+            <h4>Added to your cart</h4>
+            <p><asp:Literal ID="litToastMessage" runat="server" /></p>
+            <div class="toast-actions">
+                <a href="Cart.aspx" class="btn btn-primary">View Cart</a>
+                <asp:LinkButton ID="btnDismissToast" runat="server" CssClass="btn btn-outline" OnClick="btnDismissToast_Click">Keep Browsing</asp:LinkButton>
+            </div>
+        </asp:Panel>
+
+        <div id="cartOverlay" class="cart-drawer-overlay" style="display:none;" onclick="toggleCartDrawer(false);"></div>
+        <div id="cartDrawer" class="cart-drawer" style="display:none;">
+            <h3>Your Cart</h3>
+
+            <asp:Repeater ID="rptDrawerItems" runat="server" OnItemCommand="rptDrawerItems_ItemCommand">
+                <ItemTemplate>
+                    <div class="cart-drawer-item">
+                        <img src='<%# Eval("ImageUrl") %>' alt="" />
+                        <div class="ci-info">
+                            <div class="ci-name"><%# Eval("Name") %></div>
+                            <div class="ci-meta"><%# Eval("OptionsLabel") %> &middot; <%# Eval("FormattedPrice") %></div>
+                        </div>
+                        <div class="ci-controls">
+                            <asp:LinkButton runat="server" CssClass="ci-qty-btn" CommandName="Dec">-</asp:LinkButton>
+                            <span><%# Eval("Quantity") %></span>
+                            <asp:LinkButton runat="server" CssClass="ci-qty-btn" CommandName="Inc">+</asp:LinkButton>
+                            <asp:LinkButton runat="server" CssClass="ci-delete" CommandName="Del" ToolTip="Remove">&times;</asp:LinkButton>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+
+            <asp:Literal ID="litDrawerEmpty" runat="server" />
+
+            <div style="margin-top:18px;">
+                <a href="Cart.aspx" class="btn btn-primary" style="width:100%; text-align:center; display:block;">Checkout</a>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <asp:Panel ID="pnlFooter" runat="server">
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <h5>Azure</h5>
+                        <p style="font-size:13px; opacity:.8; max-width:260px;">
+                            Coffee and tea crafted for curious palates. Every cup is a small ceremony.
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Explore</h5>
+                        <ul>
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="Coffee.aspx">Coffee</a></li>
+                            <li><a href="Tea.aspx">Tea</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="Cart.aspx">Cart</a></li>
+                            <li><a href="Coffee.aspx">Best Sellers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Visit Us</h5>
+                        <ul>
+                            <li>Mon - Sun: 7AM - 9PM</li>
+                            <li>Makati City, Philippines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">&copy; <%= DateTime.Now.Year %> Azure Coffee Shop. All rights reserved.</div>
+            </div>
+        </footer>
+        </asp:Panel>
+
+    </form>
+
+    <script src="Scripts/site.js"></script>
+</body>
+</html>

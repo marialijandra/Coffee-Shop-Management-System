@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\tea.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\tea.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\tea.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\tea.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\coffee.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\coffee.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\coffee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\coffee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\scripts\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\scripts\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\customerside\\app_code\\productcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\productcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\app_code\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\app_code\\cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\customerside\\customerside\\app_code\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Content\\site.css",
+              "RelativeDocumentMoniker": "CustomerSide\\Content\\site.css",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Content\\site.css",
+              "RelativeToolTip": "CustomerSide\\Content\\site.css",
+              "ViewState": "AgIAALYDAAAAAAAAAAAhwMUDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-24T09:15:49.498Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Web.Debug.config",
+              "RelativeDocumentMoniker": "CustomerSide\\Web.Debug.config",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Web.Debug.config",
+              "RelativeToolTip": "CustomerSide\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-07-27T13:35:23.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Web.config",
+              "RelativeDocumentMoniker": "CustomerSide\\Web.config",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Web.config",
+              "RelativeToolTip": "CustomerSide\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-07-27T13:35:20.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tea.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Tea.aspx.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\Tea.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Tea.aspx.cs",
+              "RelativeToolTip": "CustomerSide\\Tea.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:35:16.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tea.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Tea.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\Tea.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Tea.aspx",
+              "RelativeToolTip": "CustomerSide\\Tea.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:35:05.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Site.master.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Site.master.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\Site.master.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Site.master.cs",
+              "RelativeToolTip": "CustomerSide\\Site.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:34:56.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Site.master",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Site.master",
+              "RelativeDocumentMoniker": "CustomerSide\\Site.master",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Site.master",
+              "RelativeToolTip": "CustomerSide\\Site.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:34:37.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "packages.config",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\packages.config",
+              "RelativeDocumentMoniker": "CustomerSide\\packages.config",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\packages.config",
+              "RelativeToolTip": "CustomerSide\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-07-27T13:34:35.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Default.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\Default.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Default.aspx",
+              "RelativeToolTip": "CustomerSide\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:34:22.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Coffee.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Coffee.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\Coffee.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Coffee.aspx",
+              "RelativeToolTip": "CustomerSide\\Coffee.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:34:11.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Coffee.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Coffee.aspx.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\Coffee.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Coffee.aspx.cs",
+              "RelativeToolTip": "CustomerSide\\Coffee.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:34:06.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cart.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Cart.aspx.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\Cart.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Cart.aspx.cs",
+              "RelativeToolTip": "CustomerSide\\Cart.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:33:49.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Cart.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Cart.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\Cart.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Cart.aspx",
+              "RelativeToolTip": "CustomerSide\\Cart.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:33:20.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "site.js",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Scripts\\site.js",
+              "RelativeDocumentMoniker": "CustomerSide\\Scripts\\site.js",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\Scripts\\site.js",
+              "RelativeToolTip": "CustomerSide\\Scripts\\site.js",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAMwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-27T13:32:49.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\Product.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\Product.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\Product.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\Product.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:30:34.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartManager.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\CartManager.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\CartManager.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\CartManager.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\CartManager.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAIwFgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:30:05.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\CartItem.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\CartItem.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\CartItem.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:29:50.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductCatalog.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\ProductCatalog.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\ProductCatalog.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CustomerSide\\CustomerSide\\App_Code\\ProductCatalog.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\ProductCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T10:03:58.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

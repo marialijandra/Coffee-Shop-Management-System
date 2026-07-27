@@ -1,0 +1,427 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\cashierside\\orders.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\orders.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\cashierside\\orders.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\orders.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\menu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\menu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\cashiersite.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\cashiersite.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\cashiersite.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\cashiersite.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\content\\cashier.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\content\\cashier.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\app_code\\productcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\app_code\\productcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\app_code\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\app_code\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\cashierside\\app_code\\orderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\app_code\\orderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\cashierside\\app_code\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\app_code\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|e:\\downloads\\c# .net\\azurecoffeeshop\\cashierside\\cashierside\\app_code\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\app_code\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\cashierside\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CC200525-B1E8-48FF-9887-C84092898F76}|CashierSide\\CashierSide.csproj|solutionrelative:cashierside\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSide.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CashierSide\\CashierSide.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\CashierSite.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\CashierSite.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Orders.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Orders.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Menu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Downloads\\files (5)\\Menu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "cashier.css",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Content\\cashier.css",
+              "RelativeDocumentMoniker": "CashierSide\\Content\\cashier.css",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Content\\cashier.css",
+              "RelativeToolTip": "CashierSide\\Content\\cashier.css",
+              "ViewState": "AgIAABMBAAAAAAAAAAAhwCABAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-24T11:29:30.093Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Menu.aspx.cs",
+              "RelativeDocumentMoniker": "CashierSide\\Menu.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Menu.aspx.cs",
+              "RelativeToolTip": "CashierSide\\Menu.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:27:52.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Menu.aspx",
+              "RelativeDocumentMoniker": "CashierSide\\Menu.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Menu.aspx",
+              "RelativeToolTip": "CashierSide\\Menu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:27:42.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Dashboard.aspx.cs",
+              "RelativeDocumentMoniker": "CashierSide\\Dashboard.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Dashboard.aspx.cs",
+              "RelativeToolTip": "CashierSide\\Dashboard.aspx.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAMwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:27:21.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "CashierSide\\Dashboard.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Dashboard.aspx",
+              "RelativeToolTip": "CashierSide\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:27:14.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Orders.aspx.cs",
+              "RelativeDocumentMoniker": "CashierSide\\Orders.aspx.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Orders.aspx.cs",
+              "RelativeToolTip": "CashierSide\\Orders.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T06:26:49.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Orders.aspx",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Orders.aspx",
+              "RelativeDocumentMoniker": "CashierSide\\Orders.aspx",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Orders.aspx",
+              "RelativeToolTip": "CashierSide\\Orders.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-24T11:29:02.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CashierSite.master.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSite.master.cs",
+              "RelativeDocumentMoniker": "CashierSide\\CashierSite.master.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSite.master.cs",
+              "RelativeToolTip": "CashierSide\\CashierSite.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:27:11.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CashierSite.master",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSite.master",
+              "RelativeDocumentMoniker": "CashierSide\\CashierSite.master",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSite.master",
+              "RelativeToolTip": "CashierSide\\CashierSite.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-27T13:27:04.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductCatalog.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\ProductCatalog.cs",
+              "RelativeDocumentMoniker": "CashierSide\\App_Code\\ProductCatalog.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\ProductCatalog.cs",
+              "RelativeToolTip": "CashierSide\\App_Code\\ProductCatalog.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAqwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:24:08.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\Product.cs",
+              "RelativeDocumentMoniker": "CashierSide\\App_Code\\Product.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\Product.cs",
+              "RelativeToolTip": "CashierSide\\App_Code\\Product.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:23:53.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\CartItem.cs",
+              "RelativeDocumentMoniker": "CashierSide\\App_Code\\CartItem.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\CartItem.cs",
+              "RelativeToolTip": "CashierSide\\App_Code\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:21:47.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\Order.cs",
+              "RelativeDocumentMoniker": "CashierSide\\App_Code\\Order.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\Order.cs",
+              "RelativeToolTip": "CashierSide\\App_Code\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:28:50.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderStore.cs",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\OrderStore.cs",
+              "RelativeDocumentMoniker": "CashierSide\\App_Code\\OrderStore.cs",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\App_Code\\OrderStore.cs",
+              "RelativeToolTip": "CashierSide\\App_Code\\OrderStore.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAuwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:28:39.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Web.config",
+              "RelativeDocumentMoniker": "CashierSide\\Web.config",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\Web.config",
+              "RelativeToolTip": "CashierSide\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-07-24T11:31:17.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CashierSide.csproj.user",
+              "DocumentMoniker": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSide.csproj.user",
+              "RelativeDocumentMoniker": "CashierSide\\CashierSide.csproj.user",
+              "ToolTip": "E:\\Downloads\\C# .Net\\AzureCoffeeShop\\CashierSide\\CashierSide\\CashierSide.csproj.user",
+              "RelativeToolTip": "CashierSide\\CashierSide.csproj.user",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2026-07-24T11:06:16.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dashboard.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Dashboard.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Dashboard.aspx.cs",
+              "ToolTip": "E:\\Downloads\\files (5)\\Dashboard.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Dashboard.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:04:44.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Dashboard.aspx",
+              "ToolTip": "E:\\Downloads\\files (5)\\Dashboard.aspx",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-24T11:04:44.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CashierSite.master.cs",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\CashierSite.master.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\CashierSite.master.cs",
+              "ToolTip": "E:\\Downloads\\files (5)\\CashierSite.master.cs",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\CashierSite.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:04:44.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CashierSite.master",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\CashierSite.master",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\CashierSite.master",
+              "ToolTip": "E:\\Downloads\\files (5)\\CashierSite.master",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\CashierSite.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-24T11:04:43.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Web.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Web.config",
+              "ToolTip": "E:\\Downloads\\files (5)\\Web.config",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-07-24T10:59:54.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Orders.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Orders.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Orders.aspx.cs",
+              "ToolTip": "E:\\Downloads\\files (5)\\Orders.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Orders.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:00:26.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Orders.aspx",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Orders.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Orders.aspx",
+              "ToolTip": "E:\\Downloads\\files (5)\\Orders.aspx",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Orders.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-24T11:04:23.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Menu.aspx.cs",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Menu.aspx.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Menu.aspx.cs",
+              "ToolTip": "E:\\Downloads\\files (5)\\Menu.aspx.cs",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Menu.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T11:04:23.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Menu.aspx",
+              "DocumentMoniker": "E:\\Downloads\\files (5)\\Menu.aspx",
+              "RelativeDocumentMoniker": "..\\..\\..\\files (5)\\Menu.aspx",
+              "ToolTip": "E:\\Downloads\\files (5)\\Menu.aspx",
+              "RelativeToolTip": "..\\..\\..\\files (5)\\Menu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-24T11:04:23.255Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
