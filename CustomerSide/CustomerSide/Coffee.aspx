@@ -2,21 +2,22 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="page-header">
-        <h1>Coffee</h1>
-        <p>Bold, roasted, and crafted with intent.</p>
-    </div>
-
-    <section class="section">
+    <section class="section" style="padding-top:53px;">
         <div class="container">
-            <div class="filter-pills">
-                <a href="#" data-filter="all" class="active">All</a>
-                <a href="#" data-filter="Espresso">Espresso</a>
-                <a href="#" data-filter="Cold Brew">Cold Brew</a>
-                <a href="#" data-filter="Tea &amp; Cream">Tea &amp; Cream</a>
+            <div class="menu-head">
+                <div class="filter-pills">
+                    <a href="#" data-filter="all" class="active">All</a>
+                    <a href="#" data-filter="Seasonal">Seasonal</a>
+                    <a href="#" data-filter="Cold Brew">Cold Brew</a>
+                    <a href="#" data-filter="Espresso">Espresso</a>
+                </div>
+                <div class="menu-title-block">
+                    <h1 class="section-title">OUR COFFEE</h1>
+                    <span class="section-sub">Every sip, a story</span>
+                </div>
             </div>
 
-            <div class="product-grid">
+            <div class="product-grid product-grid-4col">
                 <asp:Repeater ID="rptCoffee" runat="server" OnItemCommand="rptCoffee_ItemCommand">
                     <ItemTemplate>
                         <div class="product-card" data-tag='<%# Eval("Tag") %>'>

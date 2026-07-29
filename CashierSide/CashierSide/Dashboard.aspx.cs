@@ -51,10 +51,11 @@ public partial class CashierDashboard : System.Web.UI.Page
     {
         public TransactionRow(Azure.Order order)
         {
-            OrderNumberLabel = "Order #" + order.Id;
+            OrderNumberLabel = "Order #" + order.ShortNumber;
             CustomerName = order.CustomerName;
             RefCssClass = order.RefCssClass;
             RefCode = order.RefCode;
+            ShortNumber = order.ShortNumber;
             FormattedDate = order.FormattedDate;
             FormattedTime = order.FormattedTime;
             FormattedTotal = order.FormattedTotal;
@@ -66,6 +67,7 @@ public partial class CashierDashboard : System.Web.UI.Page
         public string CustomerName { get; set; }
         public string RefCssClass { get; set; }
         public string RefCode { get; set; }
+        public string ShortNumber { get; set; }
         public string FormattedDate { get; set; }
         public string FormattedTime { get; set; }
         public string FormattedTotal { get; set; }

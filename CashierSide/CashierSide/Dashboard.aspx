@@ -46,7 +46,7 @@
                         <tr>
                             <td>
                                 <div class="tx-product">
-                                    <div class='<%# Eval("RefCssClass") %> tx-ref'><%# Eval("RefCode") %></div>
+                                    <div class='<%# Eval("RefCssClass") %> tx-ref'><%# Eval("ShortNumber") %></div>
                                     <div>
                                         <div><%# Eval("OrderNumberLabel") %></div>
                                         <div class="tx-more"><%# Eval("CustomerName") %></div>

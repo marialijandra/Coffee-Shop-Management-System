@@ -78,6 +78,7 @@
     <Content Include="Images\MochaCreamLatte.png" />
     <Content Include="Images\PeachIcedTea.png" />
     <Content Include="Images\SaltedCaramelFrappe.png" />
+    <Content Include="OrderConfirmation.aspx" />
     <Content Include="Scripts\site.js" />
     <Content Include="Tea.aspx" />
     <Content Include="Web.config" />
@@ -89,6 +90,10 @@
     </Compile>
     <Compile Include="Coffee.aspx.cs">
       <DependentUpon>Coffee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirmation.aspx.cs">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.master.cs">

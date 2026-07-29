@@ -4,7 +4,6 @@ using System.Linq;
 
 namespace Azure
 {
-
     public static class OrderStore
     {
         private static readonly object _lock = new object();
@@ -80,7 +79,7 @@ namespace Azure
             }
         }
 
-        public static void MarkPaid(int id, string method, bool discountValidated)
+        public static void MarkPaid(int id, string method, int discountQuantity)
         {
             lock (_lock)
             {
@@ -89,12 +88,14 @@ namespace Azure
 
                 order.IsPaid = true;
                 order.PaymentMethod = method;
-                order.DiscountValidated = discountValidated;
 
-                if (order.DiscountRequested && !discountValidated)
+                if (order.DiscountRequested)
                 {
-                    order.Discount = 0m;
-                    order.Total = order.Subtotal;
+                    int qty = Math.Max(0, discountQuantity);
+                    decimal applied = Math.Min(order.Discount * qty, order.Subtotal);
+                    order.DiscountQuantity = qty;
+                    order.Discount = applied;
+                    order.Total = order.Subtotal - applied;
                 }
 
                 if (order.Status == Order.StatusNew)

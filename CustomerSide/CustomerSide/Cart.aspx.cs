@@ -12,9 +12,15 @@ public partial class Cart : System.Web.UI.Page
         }
     }
 
+    private int PwdCount
+    {
+        get { return ViewState["PwdCount"] == null ? 0 : (int)ViewState["PwdCount"]; }
+        set { ViewState["PwdCount"] = value; }
+    }
+
     private decimal DiscountRate
     {
-        get { return chkDiscount.Checked ? 0.20m : 0m; }
+        get { return PwdCount > 0 ? 0.20m : 0m; }
     }
 
     private void BindCart()
@@ -25,7 +31,6 @@ public partial class Cart : System.Web.UI.Page
         {
             pnlCart.Visible = false;
             pnlEmpty.Visible = true;
-            pnlConfirmation.Visible = false;
             return;
         }
 
@@ -47,10 +52,18 @@ public partial class Cart : System.Web.UI.Page
         litSubtotal.Text = "&#8369;" + subtotal.ToString("0.00");
         litDiscountAmount.Text = discount > 0 ? "- &#8369;" + discount.ToString("0.00") : "&#8369;0.00";
         litTotal.Text = "&#8369;" + total.ToString("0.00");
+        litPwdCount.Text = PwdCount.ToString();
     }
 
-    protected void chkDiscount_CheckedChanged(object sender, EventArgs e)
+    protected void btnPwdInc_Click(object sender, EventArgs e)
     {
+        PwdCount += 1;
+        RecalculateTotals();
+    }
+
+    protected void btnPwdDec_Click(object sender, EventArgs e)
+    {
+        if (PwdCount > 0) PwdCount -= 1;
         RecalculateTotals();
     }
 
@@ -87,9 +100,9 @@ public partial class Cart : System.Web.UI.Page
         int totalItems = cart.Sum(c => c.Quantity);
         int customerNo = Azure.OrderManager.GetNextCustomerNumber();
 
-        litConfirmName.Text = txtCustomerName.Text.Trim();
-        litCustomerNo.Text = customerNo.ToString();
-        litConfirmSummary.Text = string.Format(
+        Session["LastOrderNumber"] = customerNo.ToString();
+        Session["LastOrderName"] = txtCustomerName.Text.Trim();
+        Session["LastOrderSummary"] = string.Format(
             "{0} item(s) &middot; {1} &middot; Total: <strong>&#8369;{2}</strong> {3}",
             totalItems,
             ddlOrderType.SelectedValue,
@@ -98,8 +111,6 @@ public partial class Cart : System.Web.UI.Page
 
         Azure.CartManager.Clear();
 
-        pnlCart.Visible = false;
-        pnlEmpty.Visible = false;
-        pnlConfirmation.Visible = true;
+        Response.Redirect("OrderConfirmation.aspx");
     }
 }

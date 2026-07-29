@@ -13,20 +13,19 @@ namespace Azure
         public const string StatusCancelled = "Cancelled";
 
         public int Id { get; set; }
-        public string RefCode { get; set; }       
+        public string RefCode { get; set; }
         public string CustomerName { get; set; }
-        public string OrderType { get; set; }      
+        public string OrderType { get; set; }
         public List<CartItem> Items { get; set; }
         public decimal Subtotal { get; set; }
         public decimal Discount { get; set; }
         public decimal Total { get; set; }
-        public string Status { get; set; }          
+        public string Status { get; set; }
         public bool IsPaid { get; set; }
         public string PaymentMethod { get; set; }
         public DateTime CreatedAt { get; set; }
 
-
-        public bool DiscountValidated { get; set; }
+        public int DiscountQuantity { get; set; }
 
         public int ItemCount
         {
@@ -53,16 +52,21 @@ namespace Azure
         public string FormattedDate { get { return CreatedAt.ToString("MMM d, yyyy"); } }
         public string FormattedTime { get { return CreatedAt.ToString("hh:mm tt"); } }
 
-
         public bool DiscountRequested { get { return Discount > 0; } }
 
-        public decimal PayableTotal { get { return DiscountRequested && !DiscountValidated ? Subtotal : Total; } }
+        public decimal AppliedDiscount
+        {
+            get { return DiscountRequested ? Math.Min(Discount * DiscountQuantity, Subtotal) : 0m; }
+        }
+
+        public decimal PayableTotal { get { return Subtotal - AppliedDiscount; } }
 
         public string FormattedPayableTotal { get { return "&#8369;" + PayableTotal.ToString("0.00"); } }
-
+        public string FormattedAppliedDiscount { get { return AppliedDiscount > 0 ? "- &#8369;" + AppliedDiscount.ToString("0.00") : "&#8369;0.00"; } }
 
         public string SubtotalRaw { get { return Subtotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
         public string TotalRaw { get { return Total.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
+        public string DiscountRaw { get { return Discount.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
 
         public string StatusCssClass
         {
@@ -89,9 +93,17 @@ namespace Azure
         public bool ShowPaymentButton { get { return Status == StatusNew; } }
         public bool ShowDetailsButton { get { return Status != StatusNew; } }
 
+        public string ShortNumber { get { return (Id % 100).ToString(); } }
+
         public string RefCssClass
         {
-            get { return OrderType == "Takeout" ? "order-ref ref-takeout" : "order-ref"; }
+            get
+            {
+                if (Status == StatusInProgress) return "order-ref ref-progress";
+                if (Status == StatusServed) return "order-ref ref-served";
+                if (Status == StatusCancelled) return "order-ref ref-cancelled";
+                return "order-ref ref-new";
+            }
         }
 
         public string CardCssClass

@@ -101,10 +101,14 @@ public partial class CashierOrders : System.Web.UI.Page
             var ddl = (DropDownList)e.Item.FindControl("ddlPayMethod");
             string method = ddl != null ? ddl.SelectedValue : "Cash";
 
-            var chkDiscount = (CheckBox)e.Item.FindControl("chkValidateDiscount");
-            bool discountValidated = chkDiscount != null && chkDiscount.Checked;
+            int discountQty = 0;
+            string qtyRaw = Request.Form["discountQty_" + orderId];
+            if (!string.IsNullOrEmpty(qtyRaw))
+            {
+                int.TryParse(qtyRaw, out discountQty);
+            }
 
-            Azure.OrderStore.MarkPaid(orderId, method, discountValidated);
+            Azure.OrderStore.MarkPaid(orderId, method, discountQty);
         }
 
         BindOrders();

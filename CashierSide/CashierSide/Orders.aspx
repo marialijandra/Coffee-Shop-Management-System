@@ -33,12 +33,13 @@
     <div class="order-grid">
         <asp:Repeater ID="rptOrders" runat="server" OnItemCommand="rptOrders_ItemCommand">
             <ItemTemplate>
-                <div class='<%# Eval("CardCssClass") %>'>
+                <div class='<%# Eval("CardCssClass") %> order-card-clickable'
+                     onclick='<%# (bool)Eval("ShowDetailsButton") ? "openDetailsModal(this)" : "openPayModal(this)" %>'>
                     <div class="order-card-head">
-                        <div class='<%# Eval("RefCssClass") %>'><%# Eval("RefCode") %></div>
+                        <div class='<%# Eval("RefCssClass") %>'><%# Eval("ShortNumber") %></div>
                         <div class="order-head-info">
                             <div class="order-customer"><%# Eval("CustomerName") %></div>
-                            <div class="order-meta">Order #<%# Eval("Id") %> &middot; <%# Eval("OrderType") %></div>
+                            <div class="order-meta">Order #<%# Eval("ShortNumber") %> &middot; <%# Eval("OrderType") %></div>
                         </div>
                         <span class='status-badge <%# Eval("StatusCssClass") %>'><span class="dot"></span><%# Eval("Status") %></span>
                     </div>
@@ -69,21 +70,17 @@
                         <span><%# Eval("FormattedTotal") %></span>
                     </div>
 
-                    <div class="order-actions">
-                        <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("ShowDetailsButton") %>'>
-                            <button type="button" class="btn btn-details" onclick="openDetailsModal(this)">See Details</button>
-                        </asp:PlaceHolder>
-
-                        <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("ShowPaymentButton") %>'>
-                            <button type="button" class="btn btn-pay" onclick="openPayModal(this)">Payment</button>
-                        </asp:PlaceHolder>
-                    </div>
+                    <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("ShowPaymentButton") %>'>
+                        <div class="order-actions">
+                            <button type="button" class="btn btn-pay" onclick="event.stopPropagation(); openPayModal(this)">Payment</button>
+                        </div>
+                    </asp:PlaceHolder>
 
                     <div class="details-source" style="display:none;" data-status-class='<%# Eval("StatusCssClass") %>'>
                         <h3 class="modal-title"><%# Eval("CustomerName") %> &middot; <%# Eval("RefCode") %></h3>
                         <div class="modal-grid">
                             <div>
-                                <span class="modal-section-label">Order #<%# Eval("Id") %> &middot; <%# Eval("OrderType") %></span>
+                                <span class="modal-section-label">Order #<%# Eval("ShortNumber") %> &middot; <%# Eval("OrderType") %></span>
                                 <div class="receipt-list">
                                     <asp:Repeater runat="server" DataSource='<%# Eval("Items") %>'>
                                         <ItemTemplate>
@@ -149,16 +146,17 @@
                          style="display:none;"
                          data-subtotal-raw='<%# Eval("SubtotalRaw") %>'
                          data-total-raw='<%# Eval("TotalRaw") %>'
+                         data-discount-raw='<%# Eval("DiscountRaw") %>'
                          data-discount-requested='<%# Eval("DiscountRequested") %>'>
                         <h3 class="modal-title">Payment</h3>
                         <div class="modal-grid">
                             <div>
                                 <span class="modal-section-label">Customer Info</span>
                                 <div class="customer-info-row">
-                                    <div class='<%# Eval("RefCssClass") %>'><%# Eval("RefCode") %></div>
+                                    <div class='<%# Eval("RefCssClass") %>'><%# Eval("ShortNumber") %></div>
                                     <div class="customer-info-name">
                                         <div class="order-customer"><%# Eval("CustomerName") %></div>
-                                        <div class="order-meta">Order #<%# Eval("Id") %> &middot; <%# Eval("OrderType") %></div>
+                                        <div class="order-meta">Order #<%# Eval("ShortNumber") %> &middot; <%# Eval("OrderType") %></div>
                                     </div>
                                     <div class="customer-info-datetime">
                                         <%# Eval("FormattedDate") %><br /><%# Eval("FormattedTime") %>
@@ -183,23 +181,30 @@
 
                                     <div class="receipt-summary">
                                         <div class="summary-row"><span>Subtotal</span><span><%# Eval("FormattedSubtotal") %></span></div>
-                                        <div class="summary-row"><span>Discount</span><span class="pay-discount-line"><%# Eval("FormattedDiscount") %></span></div>
+                                        <div class="summary-row"><span>Discount</span><span class="pay-discount-line"><%# Eval("FormattedAppliedDiscount") %></span></div>
                                         <div class="summary-row total"><span>Total</span><span class="pay-total-amount"><%# Eval("FormattedPayableTotal") %></span></div>
                                     </div>
                                 </div>
 
                                 <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("DiscountRequested") %>'>
-                                    <label class="discount-check-row">
-                                        <asp:CheckBox ID="chkValidateDiscount" runat="server" CssClass="discount-validate-checkbox" />
-                                        PWD / Senior Citizen ID validated
-                                        (<%# Eval("FormattedDiscount") %>)
-                                    </label>
+                                    <div class="discount-qty-row">
+                                        <div class="discount-qty-label">
+                                            PWD / Senior Citizen IDs validated
+                                            <div class="discount-qty-sub">Each ID deducts <%# Eval("FormattedDiscount") %></div>
+                                        </div>
+                                        <div class="discount-qty-stepper">
+                                            <button type="button" class="qty-btn qty-minus">&minus;</button>
+                                            <input type="text" class="discount-qty-input" value="0" readonly="readonly" />
+                                            <button type="button" class="qty-btn qty-plus">+</button>
+                                        </div>
+                                        <input type="hidden" class="discount-qty-hidden" name='discountQty_<%# Eval("Id") %>' value="0" />
+                                    </div>
                                 </asp:PlaceHolder>
 
                                 <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("CanCancel") %>'>
                                     <asp:LinkButton runat="server" CssClass="cancel-order-link"
                                         CommandName="SetStatus" CommandArgument='<%# Eval("Id") + "|Cancelled" %>'>
-                                        Cancel this order instead
+                                        Cancel this order
                                     </asp:LinkButton>
                                 </asp:PlaceHolder>
                             </div>
@@ -255,6 +260,7 @@
         </asp:Repeater>
     </div>
 
+    <!-- ============ SHARED MODALS ============ -->
     <div id="detailsModalOverlay" class="modal-overlay" onclick="closeModals(event)">
         <div class="modal-box" onclick="event.stopPropagation();">
             <button type="button" class="modal-close" onclick="closeModals()">&times;</button>
@@ -319,11 +325,14 @@
 
         function initPayModal(container) {
             var subtotal = parseFloat(container.getAttribute('data-subtotal-raw')) || 0;
-            var discountedTotal = parseFloat(container.getAttribute('data-total-raw')) || 0;
+            var unitDiscount = parseFloat(container.getAttribute('data-discount-raw')) || 0;
 
             var methodSelect = container.querySelector('.pay-method-select');
             var cashPanel = container.querySelector('.cash-panel');
-            var checkbox = container.querySelector('.discount-validate-checkbox');
+            var qtyInput = container.querySelector('.discount-qty-input');
+            var qtyHidden = container.querySelector('.discount-qty-hidden');
+            var qtyMinus = container.querySelector('.qty-minus');
+            var qtyPlus = container.querySelector('.qty-plus');
             var totalLabel = container.querySelector('.pay-total-amount');
             var discountLine = container.querySelector('.pay-discount-line');
             var amountValueEl = container.querySelector('.cash-amount-value');
@@ -333,18 +342,23 @@
             var quickButtons = container.querySelectorAll('.quick-cash-btn');
 
             var amountText = '0';
+            var discountQty = 0;
+
+            function appliedDiscount() {
+                var raw = unitDiscount * discountQty;
+                return raw > subtotal ? subtotal : raw;
+            }
 
             function currentPayable() {
-                if (checkbox && checkbox.checked) return discountedTotal;
-                return subtotal;
+                return subtotal - appliedDiscount();
             }
 
             function refreshTotals() {
                 var payable = currentPayable();
                 if (totalLabel) totalLabel.innerHTML = '&#8369;' + payable.toFixed(2);
                 if (discountLine) {
-                    var discountAmt = subtotal - discountedTotal;
-                    discountLine.innerHTML = (checkbox && checkbox.checked && discountAmt > 0)
+                    var discountAmt = appliedDiscount();
+                    discountLine.innerHTML = discountAmt > 0
                         ? '- &#8369;' + discountAmt.toFixed(2)
                         : '&#8369;0.00';
                 }
@@ -365,6 +379,13 @@
                 refreshChange();
             }
 
+            function setQty(value) {
+                discountQty = value < 0 ? 0 : value;
+                if (qtyInput) qtyInput.value = discountQty;
+                if (qtyHidden) qtyHidden.value = discountQty;
+                refreshTotals();
+            }
+
             if (methodSelect) {
                 methodSelect.onchange = function () {
                     if (cashPanel) cashPanel.style.display = (methodSelect.value === 'Cash') ? '' : 'none';
@@ -372,9 +393,8 @@
                 if (cashPanel) cashPanel.style.display = (methodSelect.value === 'Cash') ? '' : 'none';
             }
 
-            if (checkbox) {
-                checkbox.onchange = refreshTotals;
-            }
+            if (qtyMinus) qtyMinus.onclick = function () { setQty(discountQty - 1); };
+            if (qtyPlus) qtyPlus.onclick = function () { setQty(discountQty + 1); };
 
             keyButtons.forEach(function (key) {
                 key.onclick = function () {
@@ -401,7 +421,7 @@
             });
 
             setAmount('0');
-            refreshTotals();
+            setQty(0);
         }
     </script>
 

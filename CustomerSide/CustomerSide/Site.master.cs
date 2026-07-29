@@ -25,9 +25,14 @@ public partial class SiteMaster : System.Web.UI.MasterPage
     private void HideFooterOnLandingPage()
     {
         string page = System.IO.Path.GetFileName(Request.Path).ToLower();
-        if (page == "default.aspx" || page == "")
+
+        if (page == "default.aspx" || page == "" || page == "coffee.aspx" || page == "tea.aspx" || page == "orderconfirmation.aspx" || page == "cart.aspx")
         {
             pnlFooter.Visible = false;
+        }
+
+        if (page == "default.aspx" || page == "" || page == "tea.aspx" || page == "coffee.aspx" || page == "cart.aspx" || page == "orderconfirmation.aspx")
+        {
             pageBody.Attributes["class"] = "no-scroll";
         }
     }
