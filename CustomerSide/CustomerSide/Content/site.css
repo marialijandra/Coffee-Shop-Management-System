@@ -566,6 +566,25 @@ button {
     z-index: 3;
 }
 
+.product-card.sold-out {
+    opacity: .6;
+}
+
+.sold-out-flag {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: rgba(43,42,36,.55);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
 .add-btn {
     position: absolute;
     top: 10px;

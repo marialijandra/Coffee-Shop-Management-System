@@ -118,8 +118,8 @@ namespace Azure
             if (order.Status == Order.StatusCancelled) return;
 
             int eligible = Math.Max(0, discountQuantity);
-            decimal discount = Pricing.DiscountFor(order.Subtotal, order.ItemCount, eligible);
             if (eligible > order.ItemCount) eligible = order.ItemCount;
+            decimal discount = Pricing.DiscountFor(order.Items, eligible);
 
             decimal total = order.Subtotal - discount;
             decimal amountPaid = total;

@@ -24,6 +24,12 @@ public partial class Tea : System.Web.UI.Page
         var product = Azure.ProductCatalog.GetById(productId);
         if (product == null) return;
 
+        if (product.IsSoldOut)
+        {
+            BindTea();
+            return;
+        }
+
         string temperature = Request.Form["opt_temp_" + productId] ?? "Iced";
         string size = Request.Form["opt_size_" + productId] ?? "S";
         int qty;
