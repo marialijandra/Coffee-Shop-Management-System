@@ -7,25 +7,49 @@ namespace Azure
     [Serializable]
     public class Order
     {
-        public const string StatusNew = "New Order";
-        public const string StatusInProgress = "In Progress";
-        public const string StatusServed = "Served";
-        public const string StatusCancelled = "Cancelled";
+        public const string StatusNew = OrderStatus.New;
+        public const string StatusInProgress = OrderStatus.InProgress;
+        public const string StatusServed = OrderStatus.Served;
+        public const string StatusCancelled = OrderStatus.Cancelled;
 
         public int Id { get; set; }
+        public string OrderNumber { get; set; }
         public string RefCode { get; set; }
         public string CustomerName { get; set; }
         public string OrderType { get; set; }
         public List<CartItem> Items { get; set; }
+
         public decimal Subtotal { get; set; }
-        public decimal Discount { get; set; }
-        public decimal Total { get; set; }
+        public decimal DiscountApplied { get; set; }
+        public int DiscountQuantity { get; set; }
+        public decimal StoredTotal { get; set; }
+        public decimal? AmountPaid { get; set; }
+
         public string Status { get; set; }
         public bool IsPaid { get; set; }
         public string PaymentMethod { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public int DiscountQuantity { get; set; }
+        public decimal Total
+        {
+            get { return IsPaid ? StoredTotal : Subtotal; }
+        }
+
+        public decimal Discount
+        {
+            get
+            {
+                if (Status == StatusNew) return Pricing.DiscountPerDrink(Subtotal, ItemCount);
+                return IsPaid ? DiscountApplied : 0m;
+            }
+        }
+
+        public decimal AppliedDiscount
+        {
+            get { return IsPaid ? DiscountApplied : 0m; }
+        }
+
+        public decimal PayableTotal { get { return Subtotal - AppliedDiscount; } }
 
         public int ItemCount
         {
@@ -46,27 +70,25 @@ namespace Azure
 
         public bool HasMoreItems { get { return MoreItemsCount > 0; } }
 
-        public string FormattedSubtotal { get { return "&#8369;" + Subtotal.ToString("0.00"); } }
-        public string FormattedDiscount { get { return Discount > 0 ? "- &#8369;" + Discount.ToString("0.00") : "&#8369;0.00"; } }
-        public string FormattedTotal { get { return "&#8369;" + Total.ToString("0.00"); } }
+        public string FormattedSubtotal { get { return Pricing.Peso(Subtotal); } }
+        public string FormattedDiscount { get { return Discount > 0 ? "- " + Pricing.Peso(Discount) : Pricing.Peso(0m); } }
+        public string FormattedTotal { get { return Pricing.Peso(Total); } }
+        public string FormattedAmountPaid { get { return Pricing.Peso(AmountPaid ?? Total); } }
+        public string FormattedPayableTotal { get { return Pricing.Peso(PayableTotal); } }
+        public string FormattedAppliedDiscount { get { return AppliedDiscount > 0 ? "- " + Pricing.Peso(AppliedDiscount) : Pricing.Peso(0m); } }
         public string FormattedDate { get { return CreatedAt.ToString("MMM d, yyyy"); } }
         public string FormattedTime { get { return CreatedAt.ToString("hh:mm tt"); } }
 
         public bool DiscountRequested { get { return Discount > 0; } }
 
-        public decimal AppliedDiscount
+        public string SubtotalRaw { get { return Raw(Subtotal); } }
+        public string TotalRaw { get { return Raw(Total); } }
+        public string DiscountRaw { get { return Raw(Discount); } }
+
+        private static string Raw(decimal value)
         {
-            get { return DiscountRequested ? Math.Min(Discount * DiscountQuantity, Subtotal) : 0m; }
+            return value.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture);
         }
-
-        public decimal PayableTotal { get { return Subtotal - AppliedDiscount; } }
-
-        public string FormattedPayableTotal { get { return "&#8369;" + PayableTotal.ToString("0.00"); } }
-        public string FormattedAppliedDiscount { get { return AppliedDiscount > 0 ? "- &#8369;" + AppliedDiscount.ToString("0.00") : "&#8369;0.00"; } }
-
-        public string SubtotalRaw { get { return Subtotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
-        public string TotalRaw { get { return Total.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
-        public string DiscountRaw { get { return Discount.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture); } }
 
         public string StatusCssClass
         {

@@ -4,10 +4,14 @@ using System.Linq;
 
 public partial class CashierDashboard : System.Web.UI.Page
 {
+    private List<Azure.Order> _today;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
+            _today = Azure.OrderStore.GetForDate(DateTime.Today);
+
             BindStats();
             BindTransactions();
         }
@@ -15,15 +19,14 @@ public partial class CashierDashboard : System.Web.UI.Page
 
     private void BindStats()
     {
-        var all = Azure.OrderStore.GetAll();
-        var today = all.Where(o => o.CreatedAt.Date == DateTime.Now.Date).ToList();
+        var counted = _today.Where(o => o.Status != Azure.Order.StatusCancelled).ToList();
 
-        decimal revenue = today.Where(o => o.IsPaid).Sum(o => o.Total);
-        int ordersToday = today.Count;
-        int itemsToday = today.Sum(o => o.ItemCount);
-        int paidToday = today.Count(o => o.IsPaid);
+        decimal revenue = counted.Where(o => o.IsPaid).Sum(o => o.Total);
+        int ordersToday = counted.Count;
+        int itemsToday = counted.Sum(o => o.ItemCount);
+        int paidToday = counted.Count(o => o.IsPaid);
 
-        litRevenue.Text = "&#8369;" + revenue.ToString("0.00");
+        litRevenue.Text = Azure.Pricing.Peso(revenue);
         litRevenueSub.Text = paidToday + " paid order(s) so far";
 
         litOrdersToday.Text = ordersToday.ToString();
@@ -34,8 +37,8 @@ public partial class CashierDashboard : System.Web.UI.Page
 
     private void BindTransactions()
     {
-        var paid = Azure.OrderStore.GetAll()
-            .Where(o => o.IsPaid)
+        var paid = _today
+            .Where(o => o.IsPaid && o.Status != Azure.Order.StatusCancelled)
             .OrderByDescending(o => o.CreatedAt)
             .Take(20)
             .Select(o => new TransactionRow(o))
@@ -58,7 +61,7 @@ public partial class CashierDashboard : System.Web.UI.Page
             ShortNumber = order.ShortNumber;
             FormattedDate = order.FormattedDate;
             FormattedTime = order.FormattedTime;
-            FormattedTotal = order.FormattedTotal;
+            FormattedTotal = order.FormattedAmountPaid;
             PaymentMethod = order.PaymentMethod;
             MethodCssClass = "method-" + (order.PaymentMethod ?? "cash").ToLower();
         }

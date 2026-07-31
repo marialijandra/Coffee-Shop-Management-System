@@ -13,10 +13,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CashierSide</RootNamespace>
     <AssemblyName>CashierSide</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressSSLPort>44337</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,6 +67,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MySqlConnector">
+      <HintPath>lib\MySqlConnector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>lib\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>lib\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>lib\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>lib\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>lib\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Content\cashier.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Images\Cappuccino.png" />
@@ -80,26 +106,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\CartItem.cs" />
+    <Content Include="App_Code\Db.cs" />
     <Content Include="App_Code\Order.cs" />
+    <Content Include="App_Code\OrderStatus.cs" />
     <Content Include="App_Code\OrderStore.cs" />
+    <Content Include="App_Code\Pricing.cs" />
     <Content Include="App_Code\Product.cs" />
     <Content Include="App_Code\ProductCatalog.cs" />
-    <Compile Include="CashierSite.master.cs">
-      <DependentUpon>CashierSite.master</DependentUpon>
+    <Content Include="CashierSite.master.cs" />
+    <Content Include="Dashboard.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Menu.aspx.cs">
-      <DependentUpon>Menu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Orders.aspx.cs">
-      <DependentUpon>Orders.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    </Content>
+    <Content Include="Menu.aspx.cs" />
+    <Content Include="Orders.aspx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -119,13 +138,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
@@ -134,7 +146,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51044</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44336/</IISUrl>
+          <IISUrl>https://localhost:44337/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
