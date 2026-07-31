@@ -1,3 +1,5 @@
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -88,15 +90,19 @@ namespace Azure
 
     public static class OrderManager
     {
-        private static int _counter = 12;
-        private static readonly object _lock = new object();
-
         public static int GetNextCustomerNumber()
         {
-            lock (_lock)
+            Database db = new Database();
+
+            using (MySqlConnection conn = db.GetConnection())
             {
-                _counter++;
-                return _counter;
+                conn.Open();
+
+                string sql = "SELECT IFNULL(MAX(OrderID), 0) + 1 FROM Orders";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                return Convert.ToInt32(cmd.ExecuteScalar());
             }
         }
     }
