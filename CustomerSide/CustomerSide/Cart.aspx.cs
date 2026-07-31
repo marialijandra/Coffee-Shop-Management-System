@@ -18,6 +18,11 @@ public partial class Cart : System.Web.UI.Page
         set { ViewState["PwdCount"] = value; }
     }
 
+    private int DrinkCount
+    {
+        get { return Azure.CartManager.GetCart().Sum(c => c.Quantity); }
+    }
+
     private void BindCart()
     {
         var cart = Azure.CartManager.GetCart();
@@ -38,40 +43,31 @@ public partial class Cart : System.Web.UI.Page
         RecalculateTotals();
     }
 
+    private decimal CurrentDiscount()
+    {
+        return Azure.Pricing.DiscountFor(Azure.CartManager.GetCart(), PwdCount);
+    }
+
     private void RecalculateTotals()
     {
-        var cart = Azure.CartManager.GetCart();
+        if (PwdCount > DrinkCount)
+            PwdCount = DrinkCount;
 
         decimal subtotal = Azure.CartManager.Subtotal();
-
-        decimal discount = 0m;
-        int remaining = PwdCount;
-
-        foreach (var item in cart)
-        {
-            if (remaining <= 0)
-                break;
-
-            int eligibleQty = Math.Min(item.Quantity, remaining);
-
-            discount += item.Price * eligibleQty * 0.20m;
-
-            remaining -= eligibleQty;
-        }
-
+        decimal discount = CurrentDiscount();
         decimal total = subtotal - discount;
 
-        litSubtotal.Text = "&#8369;" + subtotal.ToString("0.00");
-        litDiscountAmount.Text = "- &#8369;" + discount.ToString("0.00");
-        litTotal.Text = "&#8369;" + total.ToString("0.00");
+        litSubtotal.Text = Azure.Pricing.Peso(subtotal);
+        litDiscountAmount.Text = discount > 0
+            ? "- " + Azure.Pricing.Peso(discount)
+            : Azure.Pricing.Peso(0m);
+        litTotal.Text = Azure.Pricing.Peso(total);
         litPwdCount.Text = PwdCount.ToString();
     }
 
     protected void btnPwdInc_Click(object sender, EventArgs e)
     {
-        int totalItems = Azure.CartManager.GetCart().Sum(c => c.Quantity);
-
-        if (PwdCount < totalItems)
+        if (PwdCount < DrinkCount)
             PwdCount++;
 
         RecalculateTotals();
@@ -117,23 +113,11 @@ public partial class Cart : System.Web.UI.Page
         if (cart.Count == 0)
             return;
 
+        if (PwdCount > DrinkCount)
+            PwdCount = DrinkCount;
+
         decimal subtotal = Azure.CartManager.Subtotal();
-
-        decimal discount = 0m;
-        int remaining = PwdCount;
-
-        foreach (var item in cart)
-        {
-            if (remaining <= 0)
-                break;
-
-            int eligibleQty = Math.Min(item.Quantity, remaining);
-
-            discount += item.Price * eligibleQty * 0.20m;
-
-            remaining -= eligibleQty;
-        }
-
+        decimal discount = CurrentDiscount();
         decimal total = subtotal - discount;
 
         int totalItems = cart.Sum(c => c.Quantity);
@@ -142,15 +126,15 @@ public partial class Cart : System.Web.UI.Page
         Session["LastOrderNumber"] = customerNo.ToString();
         Session["LastOrderName"] = txtCustomerName.Text.Trim();
         Session["LastOrderSummary"] = string.Format(
-            "{0} item(s) &middot; {1} &middot; Total: <strong>&#8369;{2}</strong> {3}",
+            "{0} item(s) &middot; {1} &middot; Total: <strong>{2}</strong> {3}",
             totalItems,
             ddlOrderType.SelectedValue,
-            total.ToString("0.00"),
+            Azure.Pricing.Peso(total),
             discount > 0 ? "(PWD/Senior discount applied)" : "");
 
         Azure.OrderRepository repo = new Azure.OrderRepository();
 
-        string orderNumber = "ORD-" + DateTime.Now.ToString("yyyyMMdd") + "-" + customerNo.ToString("D4");
+        string orderNumber = customerNo.ToString();
 
         repo.SaveOrder(
             orderNumber,

@@ -39,8 +39,19 @@ namespace Azure
         {
             get
             {
-                if (Status == StatusNew) return Pricing.DiscountPerDrink(Subtotal, ItemCount);
+                if (Status == StatusNew) return Pricing.DiscountFor(Items, 1);
                 return IsPaid ? DiscountApplied : 0m;
+            }
+        }
+
+        public string DiscountStepsRaw
+        {
+            get
+            {
+                var parts = new List<string>();
+                foreach (decimal step in Pricing.DiscountSteps(Items))
+                    parts.Add(Raw(step));
+                return string.Join(",", parts.ToArray());
             }
         }
 

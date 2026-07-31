@@ -147,6 +147,7 @@
                          data-subtotal-raw='<%# Eval("SubtotalRaw") %>'
                          data-total-raw='<%# Eval("TotalRaw") %>'
                          data-discount-raw='<%# Eval("DiscountRaw") %>'
+                         data-discount-steps='<%# Eval("DiscountStepsRaw") %>'
                          data-discount-requested='<%# Eval("DiscountRequested") %>'>
                         <h3 class="modal-title">Payment</h3>
                         <div class="modal-grid">
@@ -325,7 +326,10 @@
 
         function initPayModal(container) {
             var subtotal = parseFloat(container.getAttribute('data-subtotal-raw')) || 0;
-            var unitDiscount = parseFloat(container.getAttribute('data-discount-raw')) || 0;
+            var discountSteps = (container.getAttribute('data-discount-steps') || '')
+                .split(',')
+                .filter(function (s) { return s.length > 0; })
+                .map(function (s) { return parseFloat(s) || 0; });
 
             var methodSelect = container.querySelector('.pay-method-select');
             var cashPanel = container.querySelector('.cash-panel');
@@ -345,7 +349,9 @@
             var discountQty = 0;
 
             function appliedDiscount() {
-                var raw = unitDiscount * discountQty;
+                if (discountQty <= 0 || discountSteps.length === 0) return 0;
+                var index = Math.min(discountQty, discountSteps.length) - 1;
+                var raw = discountSteps[index];
                 return raw > subtotal ? subtotal : raw;
             }
 
@@ -380,6 +386,7 @@
             }
 
             function setQty(value) {
+                if (value > discountSteps.length) value = discountSteps.length;
                 discountQty = value < 0 ? 0 : value;
                 if (qtyInput) qtyInput.value = discountQty;
                 if (qtyHidden) qtyHidden.value = discountQty;

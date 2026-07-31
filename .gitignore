@@ -7,4 +7,9 @@ bin/
 obj/
 **/obj/
 
+packages/
+**/packages/
+
 *.user
+*.suo
+*.cache

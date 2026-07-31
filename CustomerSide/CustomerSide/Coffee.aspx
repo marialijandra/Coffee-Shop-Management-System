@@ -20,10 +20,15 @@
             <div class="product-grid product-grid-4col">
                 <asp:Repeater ID="rptCoffee" runat="server" OnItemCommand="rptCoffee_ItemCommand">
                     <ItemTemplate>
-                        <div class="product-card" data-tag='<%# Eval("Tag") %>'>
+                        <div class='<%# Eval("CardCssClass") %>' data-tag='<%# Eval("Tag") %>'>
                             <div class="product-media">
                                 <span class="badge"><%# Eval("Badge") %></span>
-                                <button type="button" class="add-btn" onclick="toggleOptionsPopover(this)">+</button>
+                                <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("IsAvailable") %>'>
+                                    <button type="button" class="add-btn" onclick="toggleOptionsPopover(this)">+</button>
+                                </asp:PlaceHolder>
+                                <asp:PlaceHolder runat="server" Visible='<%# (bool)Eval("IsSoldOut") %>'>
+                                    <div class="sold-out-flag">Not Available</div>
+                                </asp:PlaceHolder>
                                 <img src='<%# Eval("ImageUrl") %>' alt='<%# Eval("Name") %>' />
                             </div>
 
