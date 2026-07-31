@@ -81,19 +81,14 @@ public partial class CashierOrders : System.Web.UI.Page
         {
             string[] parts = e.CommandArgument.ToString().Split('|');
             int orderId = Convert.ToInt32(parts[0]);
-            string status = parts[1];
-            Azure.OrderStore.SetStatus(orderId, status);
+            Azure.OrderStore.TrySetStatus(orderId, parts[1]);
         }
         else if (e.CommandName == "SaveStatus")
         {
             int orderId = Convert.ToInt32(e.CommandArgument);
             string chosen = Request.Form["statusSelect_" + orderId];
 
-            var order = Azure.OrderStore.GetById(orderId);
-            if (order != null && !string.IsNullOrEmpty(chosen) && !order.StatusLocked && chosen != Azure.Order.StatusNew)
-            {
-                Azure.OrderStore.SetStatus(orderId, chosen);
-            }
+            Azure.OrderStore.TrySetStatus(orderId, chosen);
         }
         else if (e.CommandName == "MarkPaid")
         {
@@ -101,12 +96,8 @@ public partial class CashierOrders : System.Web.UI.Page
             var ddl = (DropDownList)e.Item.FindControl("ddlPayMethod");
             string method = ddl != null ? ddl.SelectedValue : "Cash";
 
-            int discountQty = 0;
-            string qtyRaw = Request.Form["discountQty_" + orderId];
-            if (!string.IsNullOrEmpty(qtyRaw))
-            {
-                int.TryParse(qtyRaw, out discountQty);
-            }
+            int discountQty;
+            int.TryParse(Request.Form["discountQty_" + orderId], out discountQty);
 
             Azure.OrderStore.MarkPaid(orderId, method, discountQty);
         }
