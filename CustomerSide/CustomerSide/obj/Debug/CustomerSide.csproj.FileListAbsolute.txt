@@ -1,2 +1,4 @@
 E:\Downloads\C# .Net\AzureCoffeeShop\CustomerSide\CustomerSide\obj\Debug\CustomerSide.csproj.AssemblyReference.cache
 E:\Downloads\C# .Net\AzureCoffeeShop\CustomerSide\CustomerSide\obj\Debug\CustomerSide.csproj.CoreCompileInputs.cache
+C:\Users\mav\Documents\Codes\m\Coffee-Shop-Management-System\CustomerSide\CustomerSide\obj\Debug\CustomerSide.csproj.AssemblyReference.cache
+C:\Users\mav\Documents\Codes\m\Coffee-Shop-Management-System\CustomerSide\CustomerSide\obj\Debug\CustomerSide.csproj.CoreCompileInputs.cache

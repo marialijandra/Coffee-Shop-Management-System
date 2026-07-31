@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|c:\\users\\mav\\documents\\codes\\m\\coffee-shop-management-system\\customerside\\customerside\\app_code\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\customerside\\app_code\\cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\app_code\\cartmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|c:\\users\\mav\\documents\\codes\\m\\coffee-shop-management-system\\customerside\\customerside\\orderconfirmation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\orderconfirmation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|c:\\users\\mav\\documents\\codes\\m\\coffee-shop-management-system\\customerside\\customerside\\orderconfirmation.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\orderconfirmation.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|c:\\users\\mav\\documents\\codes\\m\\coffee-shop-management-system\\customerside\\customerside\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|c:\\users\\mav\\documents\\codes\\m\\coffee-shop-management-system\\customerside\\customerside\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C99251B1-2E33-4326-B10A-E84D465D120E}|CustomerSide\\CustomerSide.csproj|solutionrelative:customerside\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderConfirmation.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\OrderConfirmation.aspx.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\OrderConfirmation.aspx.cs",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\OrderConfirmation.aspx.cs",
+              "RelativeToolTip": "CustomerSide\\OrderConfirmation.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T15:12:41.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderConfirmation.aspx",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\OrderConfirmation.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\OrderConfirmation.aspx",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\OrderConfirmation.aspx",
+              "RelativeToolTip": "CustomerSide\\OrderConfirmation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-31T15:12:41.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cart.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\Cart.aspx.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\Cart.aspx.cs",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\Cart.aspx.cs",
+              "RelativeToolTip": "CustomerSide\\Cart.aspx.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAJgAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T15:12:46.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.aspx",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\Cart.aspx",
+              "RelativeDocumentMoniker": "CustomerSide\\Cart.aspx",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\Cart.aspx",
+              "RelativeToolTip": "CustomerSide\\Cart.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-31T15:12:44.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartManager.cs",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\App_Code\\CartManager.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\CartManager.cs",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\App_Code\\CartManager.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\CartManager.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAUwGIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T15:02:40.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\App_Code\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "CustomerSide\\App_Code\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\mav\\Documents\\Codes\\m\\Coffee-Shop-Management-System\\CustomerSide\\CustomerSide\\App_Code\\OrderRepository.cs",
+              "RelativeToolTip": "CustomerSide\\App_Code\\OrderRepository.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAlwJEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T15:02:40.671Z",
+              "EditorCaption": ""
             }
           ]
         }
