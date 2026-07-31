@@ -148,6 +148,21 @@ public partial class Cart : System.Web.UI.Page
             total.ToString("0.00"),
             discount > 0 ? "(PWD/Senior discount applied)" : "");
 
+        Azure.OrderRepository repo = new Azure.OrderRepository();
+
+        string orderNumber = "ORD-" + DateTime.Now.ToString("yyyyMMdd") + "-" + customerNo.ToString("D4");
+
+        repo.SaveOrder(
+            orderNumber,
+            txtCustomerName.Text.Trim(),
+            ddlOrderType.SelectedValue,
+            subtotal,
+            discount,
+            PwdCount,
+            total,
+            cart
+        );
+
         Azure.CartManager.Clear();
 
         Response.Redirect("OrderConfirmation.aspx");
