@@ -4,11 +4,12 @@ using System.Web;
 
 namespace Azure
 {
-    
+
     public static class CartManager
     {
         private const string SessionKey = "AzureCart";
-        private const decimal LargeUpcharge = 20.00m;
+        private const decimal LargeUpcharge = 15.00m;
+        private const decimal IcedUpcharge = 10.00m;
 
         public static List<CartItem> GetCart()
         {
@@ -24,7 +25,8 @@ namespace Azure
         public static void AddItem(Product product, int quantity, string temperature, string size)
         {
             var cart = GetCart();
-            decimal unitPrice = product.Price + (size == "L" ? LargeUpcharge : 0m);
+            decimal unitPrice = product.Price + (size == "L" ? LargeUpcharge : 0m)
+                                    + (temperature == "Iced" ? IcedUpcharge : 0m);
 
             var existing = cart.FirstOrDefault(c =>
                 c.ProductId == product.Id &&
@@ -83,10 +85,10 @@ namespace Azure
         }
     }
 
- 
+
     public static class OrderManager
     {
-        private static int _counter = 12; 
+        private static int _counter = 12;
         private static readonly object _lock = new object();
 
         public static int GetNextCustomerNumber()
