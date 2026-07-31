@@ -18,11 +18,6 @@ public partial class Cart : System.Web.UI.Page
         set { ViewState["PwdCount"] = value; }
     }
 
-    private decimal DiscountRate
-    {
-        get { return PwdCount > 0 ? 0.20m : 0m; }
-    }
-
     private void BindCart()
     {
         var cart = Azure.CartManager.GetCart();
@@ -45,25 +40,48 @@ public partial class Cart : System.Web.UI.Page
 
     private void RecalculateTotals()
     {
+        var cart = Azure.CartManager.GetCart();
+
         decimal subtotal = Azure.CartManager.Subtotal();
-        decimal discount = subtotal * DiscountRate;
+
+        decimal discount = 0m;
+        int remaining = PwdCount;
+
+        foreach (var item in cart)
+        {
+            if (remaining <= 0)
+                break;
+
+            int eligibleQty = Math.Min(item.Quantity, remaining);
+
+            discount += item.Price * eligibleQty * 0.20m;
+
+            remaining -= eligibleQty;
+        }
+
         decimal total = subtotal - discount;
 
         litSubtotal.Text = "&#8369;" + subtotal.ToString("0.00");
-        litDiscountAmount.Text = discount > 0 ? "- &#8369;" + discount.ToString("0.00") : "&#8369;0.00";
+        litDiscountAmount.Text = "- &#8369;" + discount.ToString("0.00");
         litTotal.Text = "&#8369;" + total.ToString("0.00");
         litPwdCount.Text = PwdCount.ToString();
     }
 
     protected void btnPwdInc_Click(object sender, EventArgs e)
     {
-        PwdCount += 1;
+        int totalItems = Azure.CartManager.GetCart().Sum(c => c.Quantity);
+
+        if (PwdCount < totalItems)
+            PwdCount++;
+
         RecalculateTotals();
     }
 
     protected void btnPwdDec_Click(object sender, EventArgs e)
     {
-        if (PwdCount > 0) PwdCount -= 1;
+        if (PwdCount > 0)
+            PwdCount--;
+
         RecalculateTotals();
     }
 
@@ -76,9 +94,11 @@ public partial class Cart : System.Web.UI.Page
             case "Inc":
                 Azure.CartManager.ChangeQuantity(index, 1);
                 break;
+
             case "Dec":
                 Azure.CartManager.ChangeQuantity(index, -1);
                 break;
+
             case "Del":
                 Azure.CartManager.RemoveAt(index);
                 break;
@@ -89,14 +109,33 @@ public partial class Cart : System.Web.UI.Page
 
     protected void btnCheckout_Click(object sender, EventArgs e)
     {
-        if (!Page.IsValid) return;
+        if (!Page.IsValid)
+            return;
 
         var cart = Azure.CartManager.GetCart();
-        if (cart.Count == 0) return;
+
+        if (cart.Count == 0)
+            return;
 
         decimal subtotal = Azure.CartManager.Subtotal();
-        decimal discount = subtotal * DiscountRate;
+
+        decimal discount = 0m;
+        int remaining = PwdCount;
+
+        foreach (var item in cart)
+        {
+            if (remaining <= 0)
+                break;
+
+            int eligibleQty = Math.Min(item.Quantity, remaining);
+
+            discount += item.Price * eligibleQty * 0.20m;
+
+            remaining -= eligibleQty;
+        }
+
         decimal total = subtotal - discount;
+
         int totalItems = cart.Sum(c => c.Quantity);
         int customerNo = Azure.OrderManager.GetNextCustomerNumber();
 
@@ -107,7 +146,7 @@ public partial class Cart : System.Web.UI.Page
             totalItems,
             ddlOrderType.SelectedValue,
             total.ToString("0.00"),
-            DiscountRate > 0 ? "(PWD/Senior discount applied)" : "");
+            discount > 0 ? "(PWD/Senior discount applied)" : "");
 
         Azure.CartManager.Clear();
 
